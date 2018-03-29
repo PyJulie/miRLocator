@@ -23,7 +23,7 @@ app.config['SECRET_KEY'] = '1111'
 app.config['UPLOAD_FOLDER'] = os.getcwd()
 
 username = '13335395072@sina.cn'
-password = '584014930'
+password = 'xxxxxxx'
 sender = username
 msg = MIMEMultipart()
 
