@@ -20,7 +20,7 @@ Python package:
 * Flask  
 * Flask-WTF  
 
-Most Python packages bove could be installed by "pip" directly.  
+Most Python packages above could be installed by "pip" directly.  
 
 ## Run
 ```
