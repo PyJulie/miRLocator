@@ -10,12 +10,12 @@ $sudo apt-get update
 $sudo apt-get install vienna-rna
 ```
 Python package:  
-[Scikit-learn](http://scikit-learn.org/stable/)  
-Scikit-neuralnetwork  
-Numpy  
-Scipy  
-Flask  
-Flask-WTF  
+* [Scikit-learn](http://scikit-learn.org/stable/)  
+* Scikit-neuralnetwork  
+* Numpy  
+* Scipy  
+* Flask  
+* Flask-WTF  
 
 Most Python packages bove could be installed by "pip" directly.  
 
