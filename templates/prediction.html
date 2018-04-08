@@ -34,10 +34,10 @@
 </div>
 <div class="header_navbar">
     <span class="h3"><a class="header_link" href="/">Home</a></span>
-    <span class="h3"><a class="header_link" href="/">Prediction</a></span>
-    <span class="h3"><a class="header_link" href="/train">Train Model</a></span>
+    <span class="h3"><a class="header_link" href="/prediction"><font color="red">Prediction</font></a></span>
+    <span class="h3"><a class="header_link" href="/train">Training</a></span>
     <span class="h3"><a class="header_link" href="/documents">Documents</a></span>
-    <span class="h3"><a class="header_link" href="/contact">Contact with us</a></span>
+    <span class="h3"><a class="header_link" href="/contact">Contact</a></span>
 </div>
 
 <!--  qEnd of header image and navigating bar -->
@@ -101,9 +101,10 @@
                         <fieldset>
                             <legend><span class="h3_italic">Upload files</span></legend>
 
-                            <p>Notes：Before you use, to make sure all the functions running correctly, we recommand you to check the document we provided.</p>
+                            <p>Notes：the details of input format for prediction can be seen in documents.</p>
                             Prediction Data:
                                 <input name = "file" type="file" value="upload"/>
+                            <a href="https://github.com/PyJulie/ImageUsed/blob/master/predictionData.txt">Sample file</a>
 
 
                         </fieldset>
@@ -119,19 +120,23 @@
                     <div>
                         <fieldset>
                             <legend><span class="h3_italic">Optional</span></legend>
-
+<p></p>
                             <label title="Check the reverse complement of the sequences" for="reverseComplement">
                                 <input id="reverseComplement" name="reverseComplement" type="checkbox">
-                                <span>Use yourself model</span>
-                                <span class="h3_italic">( optional )</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>Self-defined model</span>
+                                                                <span class="h3_italic">( optional )</span>&nbsp;&nbsp;&nbsp;
                                 <input id="uploadModel" name="upModel" type="file" value="Select file"/>
+
+                                Note: Self-defined model can be obtained by Training module.
                             </label>
                             <br>
+<p></p>
                             <label title="Search UTRDB" for="utrdb">
                                 <input id="utrdb" name="utrdb" type="checkbox">
-                                <span>Evaluate the result</span>
-                                <span class="h3_italic">( optional )</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>Evaluation</span>
+                                <span class="h3_italic">( optional )</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <input id="uploadAn" name="upAn" type="file" value="Select file"/>
+                                Note: Evaluating the prediction performance, the input format are displayed in Documents.
                             </label>
                             <br>
 
@@ -142,7 +147,7 @@
                     </div>
                     <div>
                         <fieldset>
-                            <legend><span class="h3_italic">your Email</span></legend>
+                            <legend><span class="h3_italic">Email</span></legend>
 							<br />
                             <input id="email" name = "email" type="text"/>
 
@@ -157,14 +162,12 @@
                         <br>
                         <br>
                         <fieldset>
-                            <legend><span class="h3_italic">Tips</span></legend>
+                            <legend><span class="h3_italic">Suggestions</span></legend>
                             <br>
                             <label title="paste fasta sequences data here" for="inputData">
+                            <p>Before using miRLocator, please see documents to identify the correctness of input files. The time of prediction process depends on your input datasets, please wait patiently.</p>
 
-                                <p>if you provided the correct files, what you need to do is to wait for the results in patience.</p>
-                                <p>The process of prediction will last for several minutes(it depends on the size of prediction data.</p>
-                                <p>Once all the things has be done, we will send an e-mail to the address you left.</p>
-                            </label>
+                                                     </label>
                             <br>
 
                         </fieldset>
@@ -192,15 +195,15 @@
     <br>
 
 
-    <span class="h3"><a class="bottom_link" href="/">Home</a></span>
+ <span class="h3"><a class="bottom_link" href="/">Home</a></span>
     &nbsp;
 
     <span class="h3"><a class="bottom_link" href="/prediction">Prediction</a></span>
 &nbsp;
- <span class="h3"><a class="bottom_link" href="/train">Train</a></span>
+ <span class="h3"><a class="bottom_link" href="/train">Training</a></span>
 &nbsp;
     <span class="h3"><a class="bottom_link" href="/documents">Documents</a></span>&nbsp;
-    <span class="h3"><a class="bottom_link" href="/contact">Documents</a></span>
+    <span class="h3"><a class="bottom_link" href="/contact">Contact</a></span>
 
 
 
@@ -208,7 +211,7 @@
     <br>
     <br>
     <span class="copyright">Copyright ©
-        2006 - 2015 <a href="http://www.nwsuaf.edu.cn/">Home of NWFAU</a>,
+        2018 <a href="http://bioinfo.nwafu.edu.cn">Center of Bioinformatics</a>,
         NWFAU. All rights reserved.</span>
     <br>
     <br>

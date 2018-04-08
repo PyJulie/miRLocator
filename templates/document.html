@@ -35,9 +35,9 @@
 <div class="header_navbar">
     <span class="h3"><a class="header_link" href="/">Home</a></span>
     <span class="h3"><a class="header_link" href="/prediction">Prediction</a></span>
-    <span class="h3"><a class="header_link" href="/train">Train Model</a></span>
-    <span class="h3"><a class="header_link" href="/documents">Documents</a></span>
-    <span class="h3"><a class="header_link" href="/contact">Contact with us</a></span>
+    <span class="h3"><a class="header_link" href="/train">Training</a></span>
+    <span class="h3"><a class="header_link" href="/documents"><font color="red">Documents</font></a></span>
+    <span class="h3"><a class="header_link" href="/contact">Contact</a></span>
 </div>
 
 <!--  qEnd of header image and navigating bar -->
@@ -118,8 +118,8 @@
                     <div>
                         <fieldset>
                             <legend><span class="h3_italic">Prediction</span></legend>
-
-                            <img src="../static/prediction1.png" style="margin: 0 auto;">
+                            <p>The input of prediction is matrix with two or three columns (pre-miRNA identifier, pre-miRNA sequence, pre-miRNA secondary structure [not necessary]) separated with tab key, in which each line represents a pre-miRNA. An example of prediction dataset is shown in below:</p>
+                            <img src="../static/prediction1.jpg" style="margin: 0 auto;">
                             <br>
 
                         </fieldset>
@@ -130,8 +130,19 @@
                     <div>
                         <fieldset>
                             <legend><span class="h3_italic">Training</span></legend>
+                            <p>The input for training is a matrix separated with tab key, in which each line represents a miRNA, and contains four or five description items (miRNA identifier, pre-miRNA identifier, miRNA sequence, pre-miRNA sequence and pre-miRNA secondary structure [not necessary]). The example for training dataset is shown in below:</p>
+                            <img src="../static/training1.jpg" style="margin: 0 auto;">
+                            <br>
 
-                            <img src="../static/training1.png" style="margin: 0 auto;">
+                        </fieldset>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend><span class="h3_italic">Evaluation</span></legend>
+                            <p>If users would like to evaluate the prediction performance of miRLocator, one can upload the known miRNA datasets with the same format as training.</p>
                             <br>
 
                         </fieldset>
@@ -162,15 +173,15 @@
     <br>
 
 
-    <span class="h3"><a class="bottom_link" href="/">Home</a></span>
+ <span class="h3"><a class="bottom_link" href="/">Home</a></span>
     &nbsp;
 
     <span class="h3"><a class="bottom_link" href="/prediction">Prediction</a></span>
 &nbsp;
- <span class="h3"><a class="bottom_link" href="/train">Train</a></span>
+ <span class="h3"><a class="bottom_link" href="/train">Training</a></span>
 &nbsp;
     <span class="h3"><a class="bottom_link" href="/documents">Documents</a></span>&nbsp;
-    <span class="h3"><a class="bottom_link" href="/contact">Documents</a></span>
+    <span class="h3"><a class="bottom_link" href="/contact">Contact</a></span>
 
 
 
@@ -178,7 +189,7 @@
     <br>
     <br>
     <span class="copyright">Copyright ©
-        2006 - 2015 <a href="http://www.nwsuaf.edu.cn/">Home of NWFAU</a>,
+        2018 <a href="http://bioinfo.nwafu.edu.cn">Center of Bioinformatics</a>,
         NWFAU. All rights reserved.</span>
     <br>
     <br>
