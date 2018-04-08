@@ -89,6 +89,8 @@ def train1():
             print(filename,trainDir)
             answer = train.train(filename,trainDir)
             finalResult = trainDir+".zip"
+	    dic = os.getcwd()+'/result_train_'+email
+            return send_from_directory(dic,'trained_prediction_model',as_attachment = True)
             print(answer)
             make_zip2(answer, finalResult)
 
@@ -149,6 +151,8 @@ def upload_file():
             file.save(filename)
             answer = predict.predict(filename,modelname,evalname,email)
             finalResult = email+".zip"
+	    dic = os.getcwd()+'/'+email
+	    return send_from_directory(dic,'miRLocator_predResults.txt',as_attachment = True)
             make_zip(email,finalResult)
 
             data = open(finalResult,'rb')
@@ -178,5 +182,5 @@ def upload_file():
             # return render_template('CPC - Coding Potential Calculator.html')
     return render_template('prediction.html')
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5000,debug=True,threaded = True)
+    app.run(host='0.0.0.0',port=80,debug=True,threaded = True)
     #app.run(debug=True, threaded=True)
